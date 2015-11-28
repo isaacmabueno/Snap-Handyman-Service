@@ -1,66 +1,42 @@
-$(document).foundation(); {
-function smoothScroll(target, time) {
-	var margin = ($('#main-header').outerHeight() - 1);
-	if (!time) { time = '1000'; }
+jQuery(function($) {
 
-	if (target === 'toTop') {
-		$('html,body').animate({
-			scrollTop: 0
-		}, time);
-	}
-	else {
-		$('html,body').animate({
-			scrollTop: target.offset().top - margin
-		}, time);
-	}
-}
+  var $sections = $('.section'),
+    $animContainer = $('html, body'),
+    $document = $(document),
+    numSections = $sections.length,
+    currSection = 0,
+    isAnimating = false;
 
-// SCROLL DOWN ARROR BUTTON
+  // Animate to a specific index.
+  var gotoSection = function(index) {
+    isAnimating = true;
+    $animContainer.animate({
+      scrollTop: $sections.eq(index).offset().top
+    }, 750, function () {
+      isAnimating = false;
+    });
+  };
 
-	var count = 0;
+  // Advance to next or previous section.
+  var handleAction = function(direction) {
+    if (isAnimating) { return false; }
 
-	$('#scroll').on("click", function(){
+    if (direction === 'prev' && currSection > 0) { currSection--; }
+    else if (direction === 'next' && currSection < numSections - 1) { currSection++; }
+    else { return false; } // This shouldn't happen.
 
-		var sections = $('section');
+    gotoSection(currSection);
+  };
 
-    //+55px to offset the margin-top
-		var $this = $(this),
-			top = ($this.offset().top - $(window).scrollTop()) + 55,
-			right = $this.offset().right;
+  // Handle clicks.
+  $document.on('click', '.action', function() {
+    handleAction($(this).data('direction'));
+  });
 
+  // Handle keyboard input.
+  $document.keyup(function(e){
+    if (e.keyCode === 38) { handleAction('prev'); } // Up arrow.
+    if (e.keyCode === 40) { handleAction('next'); } // Down arrow.
+  });
 
-		$this.css({
-			position: 'fixed',
-			top: top,
-			right: right
-		})
-		.animate({
-			right: '5%',
-			top: '90%'
-		}, 600)
-		.addClass('clicked');
-
-		var target;
-
-		// END OF ARRAY HAS ALEADY BEEN REACHED
-		if (count > (sections.length -1) ) {
-			count = -1;
-
-			smoothScroll('toTop');
-			$this.removeClass('rotate');
-		}
-		// JUST REACHED END OF ARRAY
-		else {
-			target = $(sections[count]);
-			if (count === (sections.length -1)) {
-				$this.addClass('rotate');
-			}
-			smoothScroll(target);
-		}
-
-		count++;
-
-		$(this).find('.arrow-bounce').removeClass('arrow-bounce');
-
-	});
-};
+});

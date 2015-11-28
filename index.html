@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>Snap Handyman Services</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link href='https://fonts.googleapis.com/css?family=Rubik+Mono+One' rel='stylesheet' type='text/css'>
@@ -12,35 +12,36 @@
   </head>
     <body>
 
-    <!-- First Band (Image) -->
-
+    <!-- First Section (Image) -->
+  <section>
     <div class="row">
       <div class="large-12 columns">
         <img src="img/main.png">
-        <div id="scroll">
-          <span class="arrow-bounce">&#8595;</span>
+        <div class="controls">
+          <button class="action arrows" data-direction="prev">&#8593;</button>
+          <button class="action arrow" data-direction="next">&#8595;</button>
         </div>
         <hr>
       </div>
     </div>
-
-    <!-- Second Band (Image Left with Text) -->
-
+  </section>
     <!-- Header and Nav -->
 
   <div class="row">
     <div class="large-9 columns">
       <ul class="button-group right">
-        <li><a href="#" class="button">Link 1</a></li>
-        <li><a href="#" class="button">Link 2</a></li>
-        <li><a href="#" class="button">Link 3</a></li>
-        <li><a href="#" class="button">Link 4</a></li>
+        <li><a href="#" class="button">About</a></li>
+        <li><a href="#" class="button">Services</a></li>
+        <li><a href="#" class="button">Contact</a></li>
+        <li><a href="#" class="button">Gallery</a></li>
       </ul>
     </div>
   </div>
 
   <!-- End Header and Nav -->
 
+  <!-- Second Section -->
+  <section>
     <div class="row">
       <div class="large-4 columns">
         <img src="http://placehold.it/400x300&text=[img]">
@@ -57,10 +58,11 @@
         </div>
       </div>
     </div>
+  </section>
+  <!-- End Second Section -->
 
-
-    <!-- Third Band (Image Right with Text) -->
-
+    <!-- Third Section (Image Right with Text) -->
+  <section>
     <div class="row">
       <div class="large-8 columns">
         <h4>This is a content section.</h4>
@@ -74,6 +76,7 @@
         <img src="http://placehold.it/400x300&text=[img]">
       </div>
     </div>
+  </section>
 
 
     <!-- Footer -->
@@ -100,5 +103,8 @@
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+         $(document).smartscroll();
+       </script>
   </body>
 </html>
