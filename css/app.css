@@ -1,0 +1,90 @@
+.logo {
+  font-family: "Rubik Mono One"
+}
+.button-group {
+  display: inline;
+  list-style-type: none;
+}
+@import "bourbon";
+
+html, body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2 {
+text-align: center;
+}
+
+$padding: 35px;
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#hero {
+  text-align: center;
+  min-height: 100px;
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: $padding;
+}
+
+#hero, section {
+  padding: $padding;
+}
+
+#scroll {
+  text-align: center;
+	width: 50px;
+	height: 50px;
+	background: rgba(0,0,0,1);
+	border-radius: 50%;
+	margin: 0 auto;
+  margin-top: -55px;
+  // offset margin to absolutely center
+  margin-right: -25px;
+	color: white;
+	padding-top: 0px;
+	font-size: 26px;
+  line-height: 26px;
+	cursor: pointer;
+	position: absolute;
+	right: 50%;
+	@include transition(transform 0.6s ease);
+
+
+	&.clicked {
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+	}
+
+	&.rotate {
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		-ms-transform: rotate(3180deg);
+	}
+
+	span {
+		position: relative;
+		bottom: -10px;
+	}
+}
+
+.arrow-bounce{
+	-webkit-animation:   arrow 1s infinite;
+	-moz-animation:     arrow 1s infinite;
+	-o-animation:       arrow 1s infinite;
+	animation:          arrow 1s infinite;
+	animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+@include keyframes(arrow) {
+  0% { bottom: -13px; }
+  50% { bottom: -8px; }
+  100% { bottom: -13px; }
+}
