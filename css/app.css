@@ -8,14 +8,28 @@
 .section {
   height: 800px;
 }
+.section-footer {
+height: 200px;
+}
+h4 {
+  font-family: 'Rubik Mono One', sans-serif;
+  color: red;
+}
 .controls {
   position: fixed;
-  bottom: 10px;
-  padding: 1em;
+  bottom: 20px;
+  left: 48%;
+  padding: 2em;
   background-color: gold;
-  border-bottom: 5px solid rgba(0, 0, 0, .7);
+  /*border-bottom: 5px solid rgba(0, 0, 0, .7);*/
   margin-left: auto;
   margin-right: auto;
   display: block;
+  border-radius: 50%;
+}
+.arrows {
 
+}
+.sub-photo {
+  border-radius: 2%;
 }
