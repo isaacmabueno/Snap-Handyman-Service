@@ -32,4 +32,11 @@ h4 {
 }
 .sub-photo {
   border-radius: 2%;
+  margin-top: 20px;
+}
+.finePrint {
+  font-size: 10px;
+}
+.left {
+  float: left !important;
 }
