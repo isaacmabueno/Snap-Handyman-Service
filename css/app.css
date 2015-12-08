@@ -7,9 +7,13 @@
 }
 .section {
   height: 800px;
+  padding: 5%;
+}
+a:hover {
+  color: red;
 }
 .section-footer {
-height: 200px;
+height: 150px;
 }
 li {
   list-style: none;
@@ -30,7 +34,7 @@ h4 {
 }
 .controls {
   position: fixed;
-  bottom: 20px;
+  bottom: 35px;
   left: 48%;
   padding: 2em;
   background-color: gold;
@@ -42,7 +46,6 @@ h4 {
   z-index: 100;
 }
 .arrows {
-
 }
 .sub-photo {
   border-radius: 2%;
@@ -56,4 +59,8 @@ h4 {
 }
 {
   position: fixed;
+}
+footer, a {
+  font-weight: bold;
+  color: black;
 }
