@@ -10,45 +10,40 @@
     <link href='https://fonts.googleapis.com/css?family=Rubik+Mono+One' rel='stylesheet' type='text/css'>
 
   </head>
-  <body>
-
+    <body>
 
     <!-- First Section (Image) -->
-  <!-- <section class="section"> -->
-    <header>
-      <div class="row">
-        <div class="large-12 columns">
-          <img src="img/main.png">
-          <div class="controls">
-            <button class="action arrows" data-direction="prev">&#8593;</button>
-            <button class="action arrows" data-direction="next">&#8595;</button>
-          </div>
-          <hr>
+  <section class="section">
+    <div class="row">
+      <div class="large-12 columns">
+        <img src="img/main.png">
+        <div class="controls">
+          <button class="action arrows" data-direction="prev">&#8593;</button>
+          <button class="action arrows" data-direction="next">&#8595;</button>
         </div>
+        <hr>
       </div>
-    </header>
-  <!-- </section> -->
-    <!-- Header and Nav -->
-    <section>
-
-    <div class="contain-to-grid sticky">
-      <nav class="top-bar main-nav">
-            <a class="menu-text" href="#">Snap Handyman Service</a>
-            <ul class="dropdown">
-              <li><a class="menu-items" href="#about">About</a></li>
-              <li><a class="menu-items" href="#services">Services</a></li>
-              <li><a class="menu-items" href="#contact">Contact</a></li>
-              <li><a class="menu-items" href="#gallery">Gallery</a></li>
-          </li>
-        </ul>
-      </nav>
-      </div>
-      </section>
-
-    <!-- End Header and Nav -->
+    </div>
+  </section>
 
   <!-- Second Section -->
-  <a name="about"></a>
+
+<a name="about"></a>
+  <!-- Header and Nav -->
+  <nav>
+    <ul class="vertical medium-horizontal menu">
+            <li><a class="menu-items" href="#about">About</a></li>
+            <li><a class="menu-items" href="#services">Services</a></li>
+            <li><a class="menu-items" href="#contact">Contact</a></li>
+            <li><a class="menu-items" href="#gallery">Gallery</a></li>
+          </ul>
+
+    </section>
+  </nav>
+  <!-- End Header and Nav -->
+
+
+
   <section class="section">
     <div class="row">
       <div class="large-4 columns">
@@ -70,33 +65,30 @@
   <!-- End Second Section -->
 
     <!-- Third Section (Image Right with Text) -->
-  <a name="services"></a>
-  <section class="section">
-    <div class="row">
-      <div class="large-8 columns">
-        <h4>Services</h4>
-        <h5>Need a “Handyman” on a regular basis?</h5>
-        <h5>Sign up now for one of our most popular service offerings in a snap and start enjoying the following benefits:</h5>
-          <ul>
-            <li>Receive Discounted Rates on Parts and Labor!</li>
-            <li>Have peace of mind that your “to-do” list will be taken care of every month.</li>
-            <li>Avoid the hassle and time that it takes to coordinate appointments with multiple service
-            companies.</li>
-            <li>You pick the monthly recurring date and time that best fits your schedule, between the hours of
-            7:30AM to 5PM, allotting enough time to be completed by 5PM. We show up ON TIME, IN A SNAP!</li>
+    <a name="services"></a>
+    <section class="section">
+      <div class="row">
+        <div class="large-8 columns">
+          <h4>Services</h4>
+          <h5>Need a “Handyman” on a regular basis?</h5>
+          <h5>Sign up now for one of our most popular service offerings in a snap and start enjoying the following benefits:</h5>
+            <ul class="serviceslist">
+              <li>Receive Discounted Rates on Parts and Labor!</li>
+              <li>Have peace of mind that your “to-do” list will be taken care of every month.</li>
+              <li>Avoid the hassle and time that it takes to coordinate appointments with multiple service
+              companies.</li>
+              <li>You pick the monthly recurring date and time that best fits your schedule, between the hours of
+              7:30AM to 5PM, allotting enough time to be completed by 5PM. We show up ON TIME, IN A SNAP!</li>
+            </ul>
+              <br>
+              <p class="finePrint">*As a Monthly Service Agreement Customer, your service calls and /or repairs take top priority. Your monthly invoice payments accumulate if you don’t need service!</p>
 
-            <br>
-
-            <p class="finePrint">*As a Monthly Service Agreement Customer, your service calls and /or repairs take top priority. Your monthly invoice payments accumulate if you don’t need service!</p>
-
-          </ul>
-
+        </div>
+        <div class="large-4 columns">
+          <img class="sub-photo" src="img/arcadio.jpg">
+        </div>
       </div>
-      <div class="large-4 columns">
-        <img class="sub-photo" src="img/arcadio.jpg">
-      </div>
-    </div>
-  </section>
+    </section>
 
     <!-- Forth Secion (Image Right with Text) -->
     <a name="contact"></a>
@@ -156,6 +148,9 @@
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <!-- <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.magellan.js"></script> -->
     <!-- <script>
          $(document).smartscroll();
        </script> -->
@@ -167,7 +162,6 @@
 
 
 <!--
-
 If you do not have any items that need to be addressed in any given month, your payment will be credited to your account. Your accumulated account balance can be used at any time for any services provided by Handyman Now, in a Snap
 How to Get Started
 Select a service option from the list below. We will start billing you every month based on the option you choose. During the month, jot down items that you would like to be addressed during your scheduled visit or submit the Service Description List (see attached) with the line items you want completed checked. Please submit a copy of this snap list the week before your scheduled service call. If all of the work can be completed during the allotted time frame, your account will only be charged for the agreed to monthly charge. If you would like more time and the technician is available, additional time will be billed at a discounted rate of $45.00 per hour per handyman payable at the time of the visit.

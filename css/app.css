@@ -11,6 +11,19 @@
 .section-footer {
 height: 200px;
 }
+li {
+  list-style: none;
+}
+ul .menu-text {
+  list-style-type: none;
+}
+ul .dropdown {
+  list-style-type: none;
+  display: -webkit-inline-box;
+}
+.serviceslist ul {
+
+}
 h4 {
   font-family: 'Rubik Mono One', sans-serif;
   color: red;
@@ -26,6 +39,7 @@ h4 {
   margin-right: auto;
   display: block;
   border-radius: 50%;
+  z-index: 100;
 }
 .arrows {
 
@@ -42,45 +56,4 @@ h4 {
 }
 {
   position: fixed;
-}
-
-
-
-
-
-
-
-
-
-
-
-* {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  padding-top: 250px;
-}
-header {
-  height: 300px;
-  padding-top: 50px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.main-nav,
-.main {
-  position: relative;
-}
-.main-nav {
-  background: #fff;
-  height: 80px;
-  z-index: 150;
-  margin-bottom: -80px;
-  box-shadow: 0 2px 3px rgba(0,0,0,.4);
-}
-.main-nav-scrolled, header {
-  position: fixed;
-  width: 100%;
-  top: 0;
 }
