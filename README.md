@@ -1,2 +1,2 @@
 # Snap-Handyman-Service
-A website built in Foundation 5 for Snap Handyman Services.
+A website built in Foundation for Snap Handyman Services.
