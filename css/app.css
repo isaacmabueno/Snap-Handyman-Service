@@ -60,7 +60,24 @@ h4 {
 {
   position: fixed;
 }
+h4 .gallery-row {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 footer, a {
   font-weight: bold;
   color: black;
+}
+nav {
+  background-color: rgba(255, 255, 255, 0.54);
+}
+ul{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.gallery-row {
+  text-align: center;
 }
