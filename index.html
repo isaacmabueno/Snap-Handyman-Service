@@ -5,23 +5,55 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snap Handyman Services</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css" />
-    <link href='https://fonts.googleapis.com/css?family=Rubik+Mono+One|Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/css/foundation.css">
+    <!-- This is how you would link your custom stylesheet -->
+    <link rel="stylesheet" href="stylesheets/css/app.css">
+    <script src="js/vendor/modernizr.js"></script>
+    <script type="js/vendor/app.js" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Quicksand|Pathway+Gothic+One|EB+Garamond|Open+Sans+Condensed:300|Crimson+Text|Old+Standard+TT|Tinos' rel='stylesheet' type='text/css'> -->
+    <!-- add an image in the title -->
 
+    <link rel="stylesheet" href="stylesheets/css/foundation.css" />
+    <link rel="stylesheet" href="stylesheets/css/app.css" />
+    <link href='https://fonts.googleapis.com/css?family=Rubik+Mono+One|Oswald' rel='stylesheet' type='text/css'>
   </head>
     <body>
 
     <!-- First Section (Image) -->
-    <a name="home"></a>
+    <header>
+      <a name="about"></a>
+      <div class="contain-to-grid sticky">
+      <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+      <ul class="title-area">
+         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span class="text"></span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+
+        <ul class="right">
+          <li class="has-dropdown">
+            <a class="menu-text" href="#">SNAP HANDYMAN SERVICE</a>
+            <ul class="dropdown">
+              <li><a class="menu-items" href="#home">Home</a></li>
+              <li><a class="menu-items" href="#about">About</a></li>
+              <li><a class="menu-items" href="#services">Services</a></li>
+              <li><a class="menu-items" href="#contact">Contact</a></li>
+              <li><a class="menu-items" href="#gallery">Gallery</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      </nav>
+      </div>
+    </header>
+
+<a name="gallery"></a>
   <section class="section">
     <div class="row">
       <div class="large-12 columns">
-        <img src="img/main.png">
-        <div class="controls">
-          <button class="action arrows" data-direction="prev">&#8593;</button>
-          <button class="action arrows" data-direction="next">&#8595;</button>
-        </div>
+        <img class="main-logo" src="img/main.png">
+
         <hr>
       </div>
     </div>
@@ -31,18 +63,7 @@
 
 
   <!-- Header and Nav -->
-<a name="about"></a>
-  <section>
-    <nav>
-      <ul class="vertical medium-horizontal menu">
-        <li><a class="menu-items" href="#home">Home</a></li>
-        <li><a class="menu-items" href="#about">About</a></li>
-        <li><a class="menu-items" href="#services">Services</a></li>
-        <li><a class="menu-items" href="#contact">Contact</a></li>
-        <li><a class="menu-items" href="#gallery">Gallery</a></li>
-      </ul>
-    </nav>
-  </section>
+
 
   <!-- End Header and Nav -->
 
@@ -131,9 +152,8 @@
     </section>
 
 
-
-  <a name="gallery"></a>
     <section class="section">
+      <a name="gallery"></a>
       <div class="row gallery-row">
         <div class="large-12 columns">
           <h4 class="index">Gallery</h4>
@@ -239,16 +259,12 @@
       </div>
     </footer>
   </section>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-    <!-- <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation/foundation.js"></script>
-    <script src="js/foundation/foundation.magellan.js"></script> -->
-    <!-- <script>
-         $(document).smartscroll();
-       </script> -->
+  <!-- <script src="js/vendor/jquery.js"></script> -->
+  <script src="js/foundation.min.js"></script>
+  <script type="text/javascript" src="js/vendor/app.js"></script>
+  <script>
+    // $(document).foundation();
+  </script>
   </body>
 </html>
 
