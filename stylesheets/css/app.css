@@ -1,3 +1,5 @@
+@import url(cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css);
+
 .top-bar .toggle-topbar.menu-icon a {
     height: 34px;
     line-height: 50px;
@@ -17,114 +19,136 @@
     top: 1px;
     width: 20px;
 }
-.main-img {
-  /*display: none;*/
-  /*background-attachment: fixed !important;*/
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-.logo {
-  font-family: "Rubik Mono One"
-}
-.button-group {
-  display: inline;
-  list-style-type: none;
-}
-.section {
-  height: 400px;
-  padding: 5%;
-  margin-bottom: 5%;
-}
-a:hover {
-  color: red;
-}
-.section-footer {
-height: 150px;
-}
-li {
-  list-style: none;
-}
-ul .menu-text {
-  list-style-type: none;
-}
-ul .dropdown {
-  list-style-type: none;
-  display: -webkit-inline-box;
-}
-.serviceslist ul {
-
-}
-.index {
-  font-family: 'Rubik Mono One', sans-serif;
-  color: red;
-}
-.controls {
-  position: fixed;
-  bottom: 35px;
-  left: 47%;
-  padding: 2em;
-  background-color: gold;
-  /*border-bottom: 5px solid rgba(0, 0, 0, .7);*/
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  border-radius: 50%;
-  z-index: 100;
-}
-.arrows {
-}
-.sub-photo {
-  border-radius: 2%;
-  margin-top: 20px;
-}
-.finePrint {
-  font-size: 10px;
-}
-.left {
-  float: left !important;
-}
-{
-  position: fixed;
-}
-h4 .gallery-row {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-footer, a {
-  font-weight: bold;
-  color: black;
-}
-nav {
-  background-color: rgb(225, 229, 233);
+.menu-text {
+  font-family: "Quicksand" !important;
 }
 .menu-items {
-  font-family: "Anton";
+  font-family: "Quicksand" !important;
+  text-align: center;
+  text-transform: uppercase !important;
 }
-ul{
-  display: block;
+.main-img {
   margin-left: auto;
   margin-right: auto;
-
+  display: block;
+}
+.main-logo{
+  display: none;
+  background-color: white;
+  margin-top: 5%;
+}
+body {
+  background: white;
+}
+.text {
+  color: white;
+}
+ul {
+  list-style-type: none;
+}
+h1.div-title {
+  font-family: "Quicksand" !important;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 5%;
 }
 .subhead {
-  text-align: center;
-  font-family: "Oswald";
-  font-weight: bold;
+  font-family: "Quicksand";
+  text-transform: uppercase;
 }
-.gallery-row {
+.head-title {
+  font-family: "Quicksand" !important;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:2%;
+}
+.head-title-two {
+  font-family: "Raleway" !important;
+  text-align: center;
+  /*text-transform: uppercase;*/
+  padding-top:2%;
+}
+.head-title-three {
+  font-family: "Raleway" !important;
+  text-align: left;
+  padding-top: 2%;
+}
+.sub-text {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: 5%;
+}
+.sub-text-two {
+  font-family: "Open Sans Condensed", sans-serif;
+  margin-top: 2%;
+  text-align: left;
+}
+.sub-text-three {
+  font-family: "Open Sans Condensed", sans-serif;
+  margin-top: 2%;
   text-align: center;
 }
-a img {
-  height: 230px;
-  width: 238px;
-  /*width: 100%;*/
+.sub-text-three li {
+  font-size: 20px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.fine-print {
+  font-size: 10px;
+}
+.head-title-members {
+  text-align:center;
+  list-style: none;
+}
+hr {
+  border: 0;
+  width: 20%;
+}
+hr.smaller {
+  width: 50%
+}
+hr.smallest {
+  width: 25%
+}
+hr.long {
+  width: 100%;
+}
+.sign-up {
+  text-align: center;
+}
+.img-center img {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1%;
-
+  display: block;
+  height: 500px;
+  width:800px;
 }
-a img href {
-  width: 100%;
+hr {
+  border: solid black .1px;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 1.25em 0 1.1875em;
+  height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.me {
+  color: rgb(153, 101, 21);
+  font-family: Open Sans Condensed;
+  float: right;
+}
+.me:hover {
+  color: black;
+}
+.details-div {
+  color: black;
+  font-family: Open Sans Condensed;
+  margin-left: 5%;
+}
+.vcard {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+footer {
+  background-color: #333333;
 }

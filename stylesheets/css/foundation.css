@@ -1705,7 +1705,10 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #333333; }
+  /*background: #333333;*/
+  background: #FF0000;
+  box-shadow: 3px 3px 12px 3px #ccc;
+ }
   .contain-to-grid .top-bar {
     margin-bottom: 0; }
 
@@ -1729,8 +1732,11 @@ meta.foundation-mq-topbar {
       z-index: 98; }
 
 .top-bar {
-  background: #333333;
-  height: 2.8125rem;
+  /*background: #333333;*/
+  background: #FF0000;
+  /*box-shadow: 3px 3px 12px 3px #ccc;*/
+  /*height: 2.8125rem;*/
+  height: 4rem;
   line-height: 2.8125rem;
   margin-bottom: 0;
   overflow: hidden;
@@ -1846,7 +1852,9 @@ meta.foundation-mq-topbar {
     height: 1px;
     width: 100%; }
   .top-bar-section ul li {
-    background: #333333; }
+    /*background: #333333;*/
+    background: #FF0000;
+   }
     .top-bar-section ul li > a {
       color: #FFFFFF;
       display: block;
@@ -2046,7 +2054,8 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.0625em) {
   .top-bar {
-    background: #333333;
+    /*background: #333333;*/
+    backgroud: #FF0000;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -2102,8 +2111,10 @@ meta.foundation-mq-topbar {
       background: #222222;
       color: #FFFFFF; }
     .top-bar-section li:not(.has-form) a:not(.button) {
-      background: #333333;
-      line-height: 2.8125rem;
+      /*background: #333333;*/
+      background: #FF0000;
+      line-height: 4rem;
+      /*line-height: 2.8125rem;*/
       padding: 0 0.9375rem; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #555555;
@@ -3778,7 +3789,7 @@ h6 {
 
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: black;
   font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem; }
