@@ -3730,11 +3730,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008CBA;
+  color: black;
   line-height: inherit;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: #FF0000; }
   a img {
     border: none; }
 
